@@ -15,7 +15,7 @@ class Migration(DataMigration):
                     birth_date="1990-04-04", email="ivakhniuk@gmail.com",
                     jabber="ivakhniuk@jabbim.com", skype="vovasan9",
                     other_contacts="tel: +380978362235", bio="Was born...")
-        User.objects.create_superuser(username='admin', password='admin', email='')
+        #User.objects.create_superuser(username='admin', password='admin', email='')
         bio.save()
 
 

@@ -1,0 +1,34 @@
+[
+    {  
+    "pk": 1, 
+    "model": "auth.user", 
+    "fields": {
+        "username": "admin",
+        "first_name": "", 
+        "last_name": "", 
+        "is_active": true, 
+        "is_superuser": true, 
+        "is_staff": true, 
+        "last_login": "2011-09-01T13:20:30+03:00", 
+        "groups": [], 
+        "user_permissions": [], 
+        "password": "admin", 
+        "email": "ivakhniuk@gmail.com", 
+        "date_joined": "2011-09-01T13:20:30+03:00"        
+        }
+    },
+    {
+    "pk": 1, 
+    "model": "contact.Person", 
+    "fields": {
+        "first_name": "Volodymyr", 
+        "last_name": "Ivakhniuk",
+        "birth_date": "1990-04-04",
+        "email": "ivakhniuk@gmail.com",
+        "jabber": "ivakhniuk@jabbim.com",
+        "skype": "vovasan9",
+        "bio": "Was born",
+        "other_contacts": "tel: +380978362235"
+        }
+    }
+]

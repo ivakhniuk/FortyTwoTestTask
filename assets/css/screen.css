@@ -1,1 +1,22 @@
- 
+body {
+	margin:0 auto;
+	width:1000px;
+}
+.column {
+    width: 450px;
+    display: inline-block;
+}
+.cell {
+    margin: 5px;
+    padding: 5px;
+    height: 20px;
+}
+.delimiter {
+    height: 4px;
+	width:1000px;
+    background-color: #BCD2EE;
+}
+
+td {
+    padding: 10px;
+}

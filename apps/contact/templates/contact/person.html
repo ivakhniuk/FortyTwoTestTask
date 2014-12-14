@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}Personal info{% endblock title %}
+
+{% block content %}
+    <div class=column>
+        <div class=cell><span>Name:  </span>{{person.first_name}} </div>
+        <div class=cell><span>Last name:  </span>{{person.last_name}}</div>
+        <div class=cell><span>Date of birth:  </span>{{person.birth_date}} </div>
+        <div class=cell> </div>
+        <div class=cell><span>BIO: </span></div>
+        <div class=cell>{{person.bio}} </div>
+    </div>
+    <div class=column>{{person.}}
+        <div class=cell><span>Contacts</span></div>
+        <div class=cell><span>Email:</span>{{person.email}} </div>
+        <div class=cell><span>Jabber:  </span>{{person.jabber}} </div>
+        <div class=cell><span>Skype:  </span>{{person.skype}} </div>
+        <div class=cell><span>Other contacts  </span></div>
+        <div class=cell>{{person.other_contacts}} </div>
+    </div>
+{% endblock content %}

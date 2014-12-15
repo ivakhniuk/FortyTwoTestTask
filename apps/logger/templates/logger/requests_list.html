@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}Log info{% endblock title %}
+
+{% block content %}
+<table>
+    <tr>
+        <td>Date and time</td>
+        <td>Path</td>
+        <td>Host</td>
+        <td>Method</td>
+        <td></td>
+    </tr>
+    {% for request in requests %}
+    <tr>
+        <td>{{request.date_time}}</td>
+        <td>{{request.path}}</td>
+        <td>{{request.path}}</td>
+        <td>{{request.method}}</td>
+        <td></td>
+    </tr>
+    
+    {%empty%}
+    No requests yet. 
+    {% endfor %}
+</table>
+{% endblock content %}

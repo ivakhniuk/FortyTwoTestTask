@@ -24,6 +24,7 @@
         {% block content %}{% endblock content %}
 		{% block footer %}
 		    <div class="delimiter"></div>
+		    <a href="{% url 'logger:log' %}">Last requests</a>
 		{% endblock footer %}
     </body>
 </html>

@@ -15,8 +15,13 @@ class Migration(DataMigration):
                     birth_date="1990-04-04", email="ivakhniuk@gmail.com",
                     jabber="ivakhniuk@jabbim.com", skype="vovasan9",
                     other_contacts="tel: +380978362235", bio="Was born...")
-        #User.objects.create_superuser(username='admin', password='admin', email='')
+        user = User(pk=1, username="admin", is_active=True,
+                    is_superuser=True, is_staff=True,
+                    last_login="2011-09-01T13:20:30+03:00", password="admin",
+                    email="ivakhniuk@gmail.com",
+                    date_joined="2011-09-01T13:20:30+03:00")
         bio.save()
+        user.save()
 
 
     def backwards(self, orm):
@@ -24,7 +29,7 @@ class Migration(DataMigration):
 
 
     models = {
-        u'resume.person': {
+        u'contact.person': {
             'Meta': {'object_name': 'Person'},
             'bio': ('django.db.models.fields.TextField', [], {'max_length': '1000'}),
             'birth_date': ('django.db.models.fields.DateField', [], {}),
@@ -38,4 +43,4 @@ class Migration(DataMigration):
         }
     }
 
-    complete_apps = ['resume']
+    complete_apps = ['contact']

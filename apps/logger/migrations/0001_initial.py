@@ -13,7 +13,6 @@ class Migration(SchemaMigration):
             (u'id', self.gf('django.db.models.fields.AutoField')(primary_key=True)),
             ('date_time', self.gf('django.db.models.fields.DateTimeField')()),
             ('path', self.gf('django.db.models.fields.CharField')(max_length=255)),
-            ('host', self.gf('django.db.models.fields.CharField')(max_length=100)),
             ('method', self.gf('django.db.models.fields.CharField')(max_length=4)),
             ('user', self.gf('django.db.models.fields.related.ForeignKey')(to=orm['auth.User'], null=True, blank=True)),
         ))
@@ -65,7 +64,6 @@ class Migration(SchemaMigration):
         u'logger.requeststore': {
             'Meta': {'object_name': 'RequestStore'},
             'date_time': ('django.db.models.fields.DateTimeField', [], {}),
-            'host': ('django.db.models.fields.CharField', [], {'max_length': '100'}),
             u'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
             'method': ('django.db.models.fields.CharField', [], {'max_length': '4'}),
             'path': ('django.db.models.fields.CharField', [], {'max_length': '255'}),
